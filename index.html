@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <title>World Time API</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>create form</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>Continent</label>
+                <input type="text" placeholder="Enter a Continent" id="continent">
+                <img src="./image/icon-error.svg" alt="">
+                <div class="small">Error message</div>
+            </div>
+            <div class="form-control">
+                <label>Location</label>
+                <input type="text" placeholder="Enter a Location" id="location">
+                <img src="./image/icon-error.svg" alt="">
+                <div class="small">Error message</div>
+            </div>
+            <button id="btn">view time</button>
+        </form>
+    </div>
+    <div class="output">
+        <h2 class="contOutput"></h2>
+        <h2 class="locaOutput"></h2>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
