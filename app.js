@@ -14,7 +14,8 @@ form.addEventListener('submit', (e) => {
 function displayTime() {
     continentValue = continent.value.trim()
     locateValue = locate.value.trim()
-    fetch(`http://worldtimeapi.org/api/timezone/${continentValue}/${locateValue}`)
+    const proxy = 'https://cors-anywhere.herokuapp.com/'
+    fetch(`${proxy}http://worldtimeapi.org/api/timezone/${continentValue}/${locateValue}`)
         .then((res) => res.json())
         .then((data) => {
             var parsedDate = new Date(data.datetime.toLocaleString('en-US'));
